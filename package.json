@@ -1,0 +1,23 @@
+{
+  "name": "waypoint-haikus",
+  "version": "0.0.1",
+  "description": "Identify haikus by @Waypoint and post them",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pnevares/WaypointHaikus.git"
+  },
+  "author": "Pablo Nevares <pablo@nevares.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pnevares/WaypointHaikus/issues"
+  },
+  "homepage": "https://github.com/pnevares/WaypointHaikus#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^22.4.2"
+  }
+}
