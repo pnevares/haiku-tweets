@@ -1,9 +1,5 @@
-// import twit
-
-// set up twit
-
-// listen for new tweets from waypoint-affiliated accounts
-
-// send those new tweets through morae
-
-// if a tweet can be made into a haiku, quote tweet and tweet the haiku from @WaypointHaikus
+Promise.resolve(getApiKeys) // retrieve api keys from storage
+  .then(setupTwit) // authenticate with twitter api
+  .then(getTimeline) // listen for new tweets from waypoint-affiliated accounts
+  .then(findHaikus) // see if a tweet can be made into a haiku
+  .then(sendTweets); // quote tweet and tweet the haiku from @WaypointHaikus
