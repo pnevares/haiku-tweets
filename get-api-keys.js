@@ -5,5 +5,7 @@ try {
 } catch(e) {
   console.log("Couldn't find waypointhaikus_api_keys.json, ya dummy");
   console.log(e);
-  return;
+  api_keys = e;
 }
+
+module.exports = api_keys;

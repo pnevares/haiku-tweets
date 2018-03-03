@@ -7,3 +7,5 @@ const t = new Twit({
   access_token_secret: api_keys.access_token_secret,
   timeout_ms: 60 * 1000,
 });
+
+module.exports = t;
