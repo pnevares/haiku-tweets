@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/pnevares/WaypointHaikus#readme",
   "dependencies": {
-    "morae": "^2.0.1",
     "syllable": "^3.0.0",
     "twit": "^2.2.9"
   },
