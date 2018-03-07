@@ -1,10 +1,10 @@
 {
   "name": "waypoint-haikus",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Identify haikus by @Waypoint and post them",
   "main": "lib/index.js",
   "scripts": {
-    "start": "node lib/index",
+    "start": "node lib/timer",
     "test": "jest"
   },
   "repository": {
