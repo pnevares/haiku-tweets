@@ -5,8 +5,9 @@
   "main": "lib/index.js",
   "scripts": {
     "lint": "eslint lib/**",
-    "start": "node lib/timer",
-    "test": "jest"
+    "start": "node lib/run",
+    "test": "jest",
+    "timer": "node lib/timer"
   },
   "repository": {
     "type": "git",
