@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/pnevares/WaypointHaikus#readme",
   "dependencies": {
+    "aws-sdk": "^2.207.0",
     "syllable": "^3.0.0",
     "twit": "^2.2.9"
   },
