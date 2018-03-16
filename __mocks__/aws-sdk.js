@@ -5,7 +5,7 @@ const AWS = jest.genMockFromModule('aws-sdk');
 let returnValue;
 let throwError;
 
-AWS.S3 = class {
+class S3 {
   getObject() {
     return {
       promise: () => {
@@ -20,7 +20,19 @@ AWS.S3 = class {
 
     };
   }
-};
+  putObject() {
+    return {
+      promise: () => {
+        if (throwError) {
+          return Promise.reject(throwError);
+        }
+
+        return Promise.resolve(returnValue);
+      },
+
+    };
+  }
+}
 
 AWS.__setReturnValue = (value) => {
   returnValue = value;
@@ -29,5 +41,11 @@ AWS.__setReturnValue = (value) => {
 AWS.__throwS3GetObject = (error) => {
   throwError = error;
 };
+
+AWS.__throwS3PutObject = (error) => {
+  throwError = error;
+};
+
+AWS.S3 = S3;
 
 module.exports = AWS;
