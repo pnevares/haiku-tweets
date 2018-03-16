@@ -4,6 +4,7 @@
   "description": "Identify haikus by @Waypoint and post them",
   "main": "lib/index.js",
   "scripts": {
+    "coverage": "jest --coverage",
     "lint": "eslint lib/**",
     "start": "node lib/run",
     "test": "jest",
