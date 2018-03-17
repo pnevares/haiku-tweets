@@ -40,6 +40,7 @@
     ],
     "moduleNameMapper": {
       "waypointhaikus_api_keys.json": "<rootDir>/__mocks__/waypointhaikus_api_keys.json"
-    }
+    },
+    "clearMocks": true
   }
 }
