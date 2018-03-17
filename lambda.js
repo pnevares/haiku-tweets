@@ -1,4 +1,4 @@
-const waypointHaikus = require('./');
+const waypointHaikus = require('./lib');
 
 exports.myHandler = (event, context, callback) => {
   waypointHaikus()

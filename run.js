@@ -1,4 +1,4 @@
-const waypointHaikus = require('./');
+const waypointHaikus = require('./lib');
 
 waypointHaikus()
   .then(console.log)

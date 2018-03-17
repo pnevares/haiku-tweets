@@ -6,7 +6,7 @@
   "scripts": {
     "coverage": "jest --coverage",
     "lint": "eslint lib/**",
-    "start": "node lib/run",
+    "start": "node run",
     "test": "jest",
     "timer": "node lib/timer"
   },
@@ -34,9 +34,7 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "**/*.{js}",
-      "!**/node_modules/**",
-      "!**/coverage/**"
+      "lib/**/*.js"
     ],
     "moduleNameMapper": {
       "waypointhaikus_api_keys.json": "<rootDir>/__mocks__/waypointhaikus_api_keys.json"
