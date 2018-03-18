@@ -37,7 +37,7 @@
       "lib/**/*.js"
     ],
     "moduleNameMapper": {
-      "waypointhaikus_api_keys.json": "<rootDir>/__mocks__/waypointhaikus_api_keys.json"
+      "config.json": "<rootDir>/__mocks__/config.json"
     },
     "clearMocks": true
   }
