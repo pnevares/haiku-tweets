@@ -1,7 +1,7 @@
 {
   "name": "haiku-tweets",
   "version": "1.2.1",
-  "description": "Identify haikus on Twitter and post them",
+  "description": "Identify haiku on Twitter and post them",
   "main": "lib/index.js",
   "scripts": {
     "coverage": "jest --coverage",
