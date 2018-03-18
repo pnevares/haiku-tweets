@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pnevares/WaypointHaikus.git"
+    "url": "https://github.com/pnevares/haiku-tweets.git"
   },
   "author": "Pablo Nevares <pablo@nevares.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pnevares/WaypointHaikus/issues"
+    "url": "https://github.com/pnevares/haiku-tweets/issues"
   },
-  "homepage": "https://github.com/pnevares/WaypointHaikus#readme",
+  "homepage": "https://github.com/pnevares/haiku-tweets",
   "dependencies": {
     "aws-sdk": "^2.207.0",
     "syllable": "^3.0.0",
