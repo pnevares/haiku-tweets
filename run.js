@@ -1,5 +1,5 @@
-const waypointHaikus = require('./lib');
+const haikuTweets = require('./lib');
 
-waypointHaikus()
+haikuTweets()
   .then(console.log)
   .catch(console.log);

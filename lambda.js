@@ -1,7 +1,7 @@
-const waypointHaikus = require('./lib');
+const haikuTweets = require('./lib');
 
 exports.myHandler = (event, context, callback) => {
-  waypointHaikus()
+  haikuTweets()
     .then(result => callback(null, result))
     .catch(callback);
 };
