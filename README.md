@@ -12,5 +12,9 @@ Steps to deploy to AWS Lambda:
 1. Create access keys for your AWS account
 1. Save your access keys and S3 bucket config in ./config.json
 1. Run `zip -r haiku-tweets.zip *` in the project root
-1. Create a Lambda function and use the zip from the previous step for your handler code
+1. Create a Lambda function, upload the zip from the previous step, using lambda.myHandler as the handler
 1. Set up a CloudWatch rule for your bot's update interval
+
+Example accounts using this code:
+https://twitter.com/waypointhaiku
+https://twitter.com/giantbombhaiku
