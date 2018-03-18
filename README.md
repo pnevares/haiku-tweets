@@ -1,2 +1,2 @@
-# WaypointHaikus
-Identify haikus by @Waypoint and post them
+# haiku-tweets
+Identify haikus on Twitter and post them

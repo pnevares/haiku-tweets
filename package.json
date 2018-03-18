@@ -1,7 +1,7 @@
 {
-  "name": "waypoint-haikus",
+  "name": "haiku-tweets",
   "version": "1.2.1",
-  "description": "Identify haikus by @Waypoint and post them",
+  "description": "Identify haikus on Twitter and post them",
   "main": "lib/index.js",
   "scripts": {
     "coverage": "jest --coverage",
