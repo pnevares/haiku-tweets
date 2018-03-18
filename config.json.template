@@ -1,0 +1,23 @@
+{
+  "twitter": {
+    "account": "",
+    "keys": {
+      "consumer_key": "",
+      "consumer_secret": "",
+      "access_token": "",
+      "access_token_secret": ""
+    }
+  },
+  "aws": {
+    "keys": {
+      "accessKeyId": "",
+      "secretAccessKey": "",
+      "region": ""
+    },
+    "s3": {
+      "Bucket": "",
+      "Key": ""
+    }
+  }
+}
+
