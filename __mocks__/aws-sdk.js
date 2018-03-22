@@ -46,6 +46,11 @@ AWS.__throwS3PutObject = (error) => {
   throwError = error;
 };
 
+AWS.__reset = () => {
+  returnValue = undefined;
+  throwError = undefined;
+};
+
 AWS.S3 = S3;
 
 module.exports = AWS;
