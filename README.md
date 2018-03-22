@@ -1,4 +1,6 @@
 # haiku-tweets
+[![Build Status](https://travis-ci.org/pnevares/haiku-tweets.svg?branch=master)](https://travis-ci.org/pnevares/haiku-tweets)
+
 Identify haiku on Twitter and post them
 
 Steps to set up:
