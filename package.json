@@ -4,10 +4,10 @@
   "description": "Identify haiku on Twitter and post them",
   "main": "lib/index.js",
   "scripts": {
-    "build": "npm run build:prep && npm run build:copy && npm run build:install && npm run build:zip",
+    "build": "npm run build:clean && npm run build:copy && npm run build:install && npm run build:zip",
+    "build:clean": "rimraf dist && mkdirp dist",
     "build:copy": "copyfiles \"lib/*\" \"*.json\" lambda.js dist",
     "build:install": "cd dist && npm install --production",
-    "build:prep": "rimraf dist && mkdirp dist",
     "build:zip": "bestzip dist.zip dist/*",
     "coverage": "jest --coverage",
     "lint": "eslint lib/**",
