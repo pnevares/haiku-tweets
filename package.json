@@ -8,7 +8,7 @@
     "build:clean": "rimraf dist && mkdirp dist",
     "build:copy": "copyfiles \"lib/*\" \"*.json\" lambda.js dist",
     "build:install": "cd dist && npm install --production",
-    "build:zip": "bestzip dist.zip dist/*",
+    "build:zip": "cd dist && bestzip dist.zip * && mv dist.zip ../",
     "coverage": "jest --coverage",
     "lint": "eslint lib/**",
     "start": "node run",
