@@ -1,6 +1,6 @@
 {
   "name": "haiku-tweets",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "description": "Identify haiku on Twitter and post them",
   "main": "lib/index.js",
   "scripts": {
