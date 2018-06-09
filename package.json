@@ -4,6 +4,11 @@
   "description": "Identify haiku on Twitter and post them",
   "main": "lib/index.js",
   "scripts": {
+    "build": "npm run build:clean && npm run build:copy && npm run build:install && npm run build:zip",
+    "build:clean": "rimraf dist && mkdirp dist",
+    "build:copy": "copyfiles \"lib/*\" \"*.json\" lambda.js dist",
+    "build:install": "cd dist && npm install --production",
+    "build:zip": "cd dist && bestzip dist.zip * && mv dist.zip ../",
     "coverage": "jest --coverage",
     "lint": "eslint lib/**",
     "start": "node run",
@@ -21,16 +26,20 @@
   },
   "homepage": "https://github.com/pnevares/haiku-tweets",
   "dependencies": {
-    "aws-sdk": "^2.207.0",
     "syllable": "^3.0.0",
     "twit": "^2.2.9"
   },
   "devDependencies": {
+    "aws-sdk": "^2.207.0",
+    "bestzip": "^1.1.4",
+    "copyfiles": "^2.0.0",
     "eslint": "^4.18.2",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-jest": "^21.13.0",
-    "jest": "^22.4.2"
+    "jest": "^22.4.2",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.6.2"
   },
   "jest": {
     "collectCoverageFrom": [
