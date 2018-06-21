@@ -20,6 +20,16 @@ Identify haiku on Twitter and post them
 1. Create a Lambda function, upload `dist.zip` from the previous step, and input `lambda.myHandler` as the handler
 1. Set up a CloudWatch rule for your bot's update interval (ex: 10 minutes)
 
+## Deploy to your Lambda from the CLI
+1. Run `npm run build` in the project root
+1. [Install and configure the AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)
+1. From your project root:
+```
+aws lambda update-function-code \
+  --function-name YOUR_LAMBDA \
+  --zip-file fileb://./dist.zip
+```
+
 ## Common problems:
 
 ### My bot is retweeting its own tweets
