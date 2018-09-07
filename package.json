@@ -48,6 +48,7 @@
     "moduleNameMapper": {
       "config.json": "<rootDir>/__mocks__/config.json"
     },
-    "clearMocks": true
+    "clearMocks": true,
+    "testEnvironment": "node"
   }
 }
