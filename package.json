@@ -26,20 +26,20 @@
   },
   "homepage": "https://github.com/pnevares/haiku-tweets",
   "dependencies": {
-    "syllable": "^3.0.0",
-    "twit": "^2.2.9"
+    "syllable": "^4.1.0",
+    "twit": "^2.2.11"
   },
   "devDependencies": {
-    "aws-sdk": "^2.207.0",
-    "bestzip": "^1.1.4",
-    "copyfiles": "^2.0.0",
-    "eslint": "^4.18.2",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.9.0",
-    "eslint-plugin-jest": "^21.13.0",
-    "jest": "^22.4.2",
-    "mkdirp": "^0.5.1",
-    "rimraf": "^2.6.2"
+    "aws-sdk": "^2.737.0",
+    "bestzip": "^2.1.6",
+    "copyfiles": "^2.3.0",
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^23.20.0",
+    "jest": "^26.4.1",
+    "mkdirp": "^1.0.4",
+    "rimraf": "^3.0.2"
   },
   "jest": {
     "collectCoverageFrom": [
